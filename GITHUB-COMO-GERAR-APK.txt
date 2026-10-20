@@ -1,0 +1,43 @@
+HORÁRIOS E AULAS — COMPILAR APK PELO GITHUB ACTIONS (SEM COMPUTADOR)
+
+Este projeto já contém:
+.github/workflows/build-apk.yml
+
+O GitHub compila o APK em um servidor na nuvem. Você só precisa do celular.
+
+PASSO 1 — CRIAR O REPOSITÓRIO
+1. Acesse github.com pelo navegador do celular e faça login.
+2. Crie um novo repositório, por exemplo: horarios-e-aulas.
+3. Pode deixar o repositório privado ou público.
+4. Não marque a opção para criar README, .gitignore ou licença, pois o projeto já possui arquivos próprios.
+
+PASSO 2 — ENVIAR O PROJETO
+1. Extraia este ZIP no celular.
+2. Dentro da pasta HorariosEAulasAndroid estão build.gradle, settings.gradle, app e a pasta .github.
+3. Envie o CONTEÚDO dessa pasta para a raiz do repositório.
+4. É essencial que o arquivo apareça no GitHub exatamente neste caminho:
+   .github/workflows/build-apk.yml
+5. Confirme/Commit as alterações.
+
+PASSO 3 — GERAR O APK
+1. Abra o repositório no GitHub.
+2. Entre na aba Actions.
+3. Abra “Gerar APK - Horários e Aulas”.
+4. Toque em “Run workflow”.
+5. Confirme em “Run workflow”.
+6. Aguarde a execução ficar verde. Normalmente leva alguns minutos.
+
+PASSO 4 — BAIXAR O APK
+1. Abra a execução concluída na aba Actions.
+2. Role até “Artifacts”.
+3. Toque em “Horarios-e-Aulas-APK”.
+4. O GitHub baixa um ZIP.
+5. Extraia o ZIP no celular.
+6. Dentro dele estará: Horarios-e-Aulas.apk
+7. Abra o APK e permita a instalação de aplicativos dessa fonte, se o Android solicitar.
+
+IMPORTANTE SOBRE O ÍCONE
+O APK gerado por este workflow usa o projeto Android completo e inclui os recursos ic_launcher, ic_launcher_round e o ícone adaptativo. Portanto, é esta compilação que deve mostrar o ícone personalizado na bandeja/lista de aplicativos.
+
+SE O GITHUB MOSTRAR ERRO
+Abra a execução vermelha > Compilar APK Android > toque na etapa que falhou e copie a mensagem de erro para o ChatGPT.
